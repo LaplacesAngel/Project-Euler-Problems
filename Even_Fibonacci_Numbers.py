@@ -5,22 +5,31 @@
 
 #try 2
 
-a, b = 1,2
-n = 4000000
-sum = 0
+# a, b = 1,2
+# n = 4000000
+# sum = 0
 
-while b <= n:
-    a, b = b, a+b
-    if a % 2 == 0:
-        sum += a
-        print(f"Sum is", sum, "a is", a, 'b is', b)
-
-
+# while b <= n:
+#     a, b = b, a+b
+#     if a % 2 == 0:
+#         sum += a
+#         print(f"Sum is", sum, "a is", a, 'b is', b)
 
 
+#make a function out of it
+        
+def findThesumOfevenFibsunder(n):
+    a, b = 1,2
+    sum = 0
+    while b <= n:
+        a, b = b, a + b
+        if a % 2 == 0:
+            sum += a
+    print(sum)
 
 
 
+findThesumOfevenFibsunder(4000000)
 
 
 
